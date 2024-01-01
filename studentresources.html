@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .year-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .year-options h2 {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .year-options button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #5784f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        .year-options button:hover {
+            background-color: #456bbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="year-options">
+        <h2>Choose Your Year:</h2>
+        <button class="button" onclick="selectYear(1)">1st Year</button>
+        <button class="button" onclick="selectYear(2)">2nd Year</button>
+        <button class="button" onclick="selectYear(3)">3rd Year</button>
+        <button class="button" onclick="selectYear(4)">4th Year</button>
+    </div>
+
+    <script>
+        function selectYear(year) {
+           
+            window.location.href = "next_page.html?year=" + year;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Knowledge</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #5784f2;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #5784f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #456bbd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Share Knowledge</h1>
+        <p>Upload your lecture videos to share with students.</p>
+    </header>
+    <main>
+        <form>
+            <label for="videoTitle">Video Title:</label>
+            <input type="text" id="videoTitle" name="videoTitle" required>
+
+            <label for="videoDescription">Video Description:</label>
+            <textarea id="videoDescription" name="videoDescription" rows="4" required></textarea>
+
+            <label for="videoFile">Select Video File:</label>
+            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+
+            <button type="submit">Upload Video</button>
+        </form>
+    </main>
+</body>
+</html>
